@@ -10,7 +10,7 @@ pub fn main() {
         )
         .max()
         .unwrap();
-    println!("{}", max_total_calories);
+    println!("Part 1: {}", max_total_calories);
 
     // Part 2
     let input = include_str!("../input.txt");
@@ -21,5 +21,5 @@ pub fn main() {
         .sorted_by(|a, b| b.cmp(a))
         .take(3)
         .sum::<i32>();
-    println!("{}", max_total_calories);
+    println!("Part 2: {}", max_total_calories);
 }
