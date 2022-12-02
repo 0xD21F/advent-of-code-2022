@@ -105,6 +105,6 @@ pub fn main() {
             }
         })
         .sum::<i32>();
-    println!("Part 1: {}", res);
+    println!("Part 2: {}", res);
     
 }
