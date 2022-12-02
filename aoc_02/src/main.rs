@@ -1,5 +1,3 @@
-
-
 pub fn main() {
     // Part 1
     let input = include_str!("../input.txt");
