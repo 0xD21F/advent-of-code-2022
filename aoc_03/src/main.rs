@@ -39,16 +39,16 @@ pub fn main() {
         .lines()
         .array_chunks::<3>()
         .map(|[a, b, c]| {
-            let common_char = a
+            let common_items = a
                 .chars()
                 .find(|a_char| {
                     b.contains(*a_char)
                         && c.contains(*a_char)
                 })
                 .unwrap();
-            scores.get(&common_char).unwrap()
+            scores.get(&common_items).unwrap()
         })
         .sum::<usize>();
-        
+
     println!("Part 2: {}", res);
 }
